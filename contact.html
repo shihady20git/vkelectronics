@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | VK Electronics Bengaluru</title>
+    <meta name="description"
+        content="Get in touch with VK Electronics for same-day doorstep refrigerator and washing machine repair services in Bengaluru. Call +91 9900409125 today.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sticky Header -->
+    <header class="header-wrapper">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="VK Electronics Home">
+                <img src="images/logo.png" alt="VK Electronics Logo" onerror="this.style.display='none'">
+                <span class="logo-text">VK Electronics</span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+
+            <div class="header-buttons">
+                <a href="tel:+919900409125" class="btn btn-header-call">
+                    <i class="fa-solid fa-phone"></i> Call Now
+                </a>
+                <a href="https://wa.me/919900409125?text=Hello%20VK%20Electronics,%20I%20would%20like%20to%20book%20a%20repair%20service."
+                    target="_blank" class="btn btn-header-wa">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Title Header -->
+    <section class="hero-section" style="padding: 7rem 0 3.5rem; text-align: center;">
+        <div class="container">
+            <h1 class="hero-title" style="font-size: 2.5rem; margin-bottom: 0.5rem;">Contact Us</h1>
+            <p class="hero-desc" style="margin: 0 auto; max-width: 600px;">Schedule your doorstep visit or reach out to
+                our customer support for any refrigerator or washing machine repair query.</p>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section class="section-padding bg-white">
+        <div class="container booking-grid">
+            <!-- Left: Contact Form -->
+            <div class="form-container">
+                <div class="form-title-group">
+                    <h3>Book Your Repair Appointment</h3>
+                    <p>Provide your basic details, select the appliance service type, and describe the issue. Our
+                        representative will contact you in under 30 minutes.</p>
+                </div>
+
+                <div class="alert-success" id="alertSuccess" role="alert">
+                    <i class="fa-solid fa-circle-check"></i> Thank you! Your request has been sent. Redirecting to
+                    WhatsApp...
+                </div>
+
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="formName">Full Name *</label>
+                            <input type="text" id="formName" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formPhone">Phone Number *</label>
+                            <input type="tel" id="formPhone" class="form-control" placeholder="+91 99000 00000"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formService">Service Required *</label>
+                        <select id="formService" class="form-control" required>
+                            <option value="" disabled selected>Select Appliance Service</option>
+                            <option value="Refrigerator Repair">Refrigerator Repair</option>
+                            <option value="Refrigerator Installation">Refrigerator Installation</option>
+                            <option value="Freezer Repair">Freezer Repair</option>
+                            <option value="Washing Machine Repair">Washing Machine Repair</option>
+                            <option value="Washing Machine Installation">Washing Machine Installation</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formMessage">Message (Optional)</label>
+                        <textarea id="formMessage" class="form-control"
+                            placeholder="Briefly describe the issue (e.g., fridge compressor noise, washing machine spin issue)..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">Send Service Request</button>
+                </form>
+            </div>
+
+            <!-- Right: Location Card -->
+            <div class="location-card">
+                <h4>Our Office & Service Area</h4>
+                <div class="location-details">
+                    <div class="location-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="location-item-text">
+                            <h5>Service Address</h5>
+                            <p>Kurlappa Layout, Kogilu, Yelahanka, Bengaluru, Karnataka 560097</p>
+                        </div>
+                    </div>
+
+                    <div class="location-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="location-item-text">
+                            <h5>Phone Support</h5>
+                            <p><a href="tel:+919900409125" style="color: var(--primary); font-weight: 700;">+91
+                                    9900409125</a></p>
+                            <p style="font-size: 0.75rem; color: var(--text-light); margin-top: 0.2rem;">Available 8:00
+                                AM – 8:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="location-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div class="location-item-text">
+                            <h5>Operational Hours</h5>
+                            <p>Daily: 8:00 AM – 8:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Container -->
+                <div class="map-container">
+                    <iframe
+                        src="https://maps.google.com/maps?q=Vk%20Electronics%20Kurlappa%20Layout%20Kogilu%20Bengaluru&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                        title="VK Electronics Google Map Location" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container footer-grid">
+            <div class="footer-col footer-about">
+                <a href="index.html" class="footer-logo">
+                    <img src="images/logo.png" alt="VK Electronics Logo" onerror="this.style.display='none'">
+                    <span>VK Electronics</span>
+                </a>
+                <p>Premium appliance repair services at your doorstep. Committed to delivering expert solutions with
+                    100% transparency and reliability.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul class="footer-links-list">
+                    <li><a href="services.html">Refrigerator Repair</a></li>
+                    <li><a href="services.html">Refrigerator Setup</a></li>
+                    <li><a href="services.html">Freezer Repair</a></li>
+                    <li><a href="services.html">Washing Machine Repair</a></li>
+                    <li><a href="services.html">Washing Machine Setup</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Support</h4>
+                <div class="footer-support">
+                    <a href="tel:+919900409125" class="btn btn-footer-call">
+                        <i class="fa-solid fa-phone"></i> +91 9900409125
+                    </a>
+                    <a href="https://wa.me/919900409125?text=Hello%20VK%20Electronics,%20I%20would%20like%20to%20book%20a%20repair%20service."
+                        target="_blank" class="btn btn-footer-wa">
+                        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 VK Electronics. All Rights Reserved. Servicing Refrigerator & Washing Machines.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919900409125?text=Hello%20VK%20Electronics" class="floating-wa-btn" target="_blank"
+        aria-label="Book on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
